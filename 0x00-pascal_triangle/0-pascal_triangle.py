@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Pascal triangle algorithm"""
+
+
 from math import factorial
 
 
@@ -7,6 +11,7 @@ def combination(n, r):
         return int(factorial(n)/(factorial(n-r) * factorial(r)))
     else:
         return -1
+
 
 def pascal_triangle(n):
     """Returns pascal triangle of 'n' steps"""
@@ -26,7 +31,3 @@ def pascal_triangle(n):
         w += 1
         h += 1
     return myList
-
-
-
-    
