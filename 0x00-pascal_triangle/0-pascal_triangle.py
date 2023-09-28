@@ -7,7 +7,7 @@ def pascal_triangle(n):
     myList = []
     if n <= 0:
         return myList
-    for w in range(0, n):
+    for w in range(n):
         row = []
         r = 0
         while len(row) <= w:
