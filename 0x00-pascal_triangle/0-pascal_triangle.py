@@ -33,3 +33,4 @@ def combination(n, r):
         return int(factorial(n)/(factorial(n-r) * factorial(r)))
     else:
         return -1
+        
