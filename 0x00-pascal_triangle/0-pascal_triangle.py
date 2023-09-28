@@ -2,9 +2,6 @@
 """Pascal triangle algorithm"""
 
 
-from math import factorial
-
-
 def pascal_triangle(n):
     """Returns pascal triangle of 'n' steps"""
     myList = []
@@ -23,6 +20,16 @@ def pascal_triangle(n):
         w += 1
         h += 1
     return myList
+
+
+def factorial(n):
+    """Returns factorial of number"""
+    if n == 0:
+        return 1
+    elif n > 0:
+        return n * factorial(n - 1)
+    else:
+        return -1
 
 
 def combination(n, r):
