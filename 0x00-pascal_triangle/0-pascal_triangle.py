@@ -7,18 +7,13 @@ def pascal_triangle(n):
     myList = []
     if n <= 0:
         return myList
-    h = 1
-    w = 1
-    while n > 0:
+    for w in range(0, n):
         row = []
         r = 0
-        while len(row) < w:
-            row.append(combination(h-1, r))
+        while len(row) <= w:
+            row.append(combination(w, r))
             r += 1
         myList.append(row)
-        n -= 1
-        w += 1
-        h += 1
     return myList
 
 
