@@ -5,14 +5,6 @@
 from math import factorial
 
 
-def combination(n, r):
-    """Returns mathematical value of nCr"""
-    if n >= r and r >= 0:
-        return int(factorial(n)/(factorial(n-r) * factorial(r)))
-    else:
-        return -1
-
-
 def pascal_triangle(n):
     """Returns pascal triangle of 'n' steps"""
     myList = []
@@ -31,3 +23,11 @@ def pascal_triangle(n):
         w += 1
         h += 1
     return myList
+
+
+def combination(n, r):
+    """Returns mathematical value of nCr"""
+    if n >= r and r >= 0:
+        return int(factorial(n)/(factorial(n-r) * factorial(r)))
+    else:
+        return -1
