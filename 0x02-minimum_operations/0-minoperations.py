@@ -2,7 +2,7 @@
 """minOperations(n) method"""
 
 
-def minOperations(n: int) -> int:
+def minOperations(n):
     """
         Calculates minimum number of operations required to achieve n chars
         arg: n is the required number of characters within the file
