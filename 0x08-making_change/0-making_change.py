@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for coin change algorithm"""
 
+
 def makeChange(coins, total):
     """Return fewest number of coins required to meet total"""
     if total <= 0:
