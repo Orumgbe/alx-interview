@@ -7,7 +7,7 @@ def isWinner(x, nums):
     nums - array of n (Given numbers 1 to n)
     x - number of rounds
     """
-    while x != 0:
+    while x > 0:
         ben = 0
         maria = 0
         prime = []
