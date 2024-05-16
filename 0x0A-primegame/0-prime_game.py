@@ -14,7 +14,7 @@ def isWinner(x, nums):
         for n in nums:
             # Extract list of prime numbers
             if n < 1:
-                prime = []
+                continue
             elif n == 1:
                 prime = []
             elif n == 2:
