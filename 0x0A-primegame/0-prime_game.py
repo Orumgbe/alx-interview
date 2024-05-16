@@ -7,9 +7,9 @@ def isWinner(x, nums):
     nums - array of n (Given numbers 1 to n)
     x - number of rounds
     """
-    ben = 0
-    maria = 0
     while x > 0:
+        ben = 0
+        maria = 0
         prime = []
         for n in nums:
             # Extract list of prime numbers
@@ -39,10 +39,10 @@ def isWinner(x, nums):
                 ben += 1
             else:
                 maria += 1
-        x -= 1
-    if ben > maria:
-        return 'Ben'
-    elif maria > ben:
-        return 'Maria'
-    else:
-        return
+            x -= 1
+        if ben > maria:
+            return 'Ben'
+        elif maria > ben:
+            return 'Maria'
+        else:
+            return
