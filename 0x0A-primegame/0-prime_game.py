@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 """Prime number game"""
 
-
+""""The flaw in the function efficiency is that it undergoes a lot
+of unnecessary precompilation for the list of prime numbers for each 
+number in nums list, this can be avoided by precompiling a list of
+primes up to the largest number in nums list and slice out only the
+required segment for each number in list nums"""
 def isWinner(x, nums):
     """
     nums - array of n (Given numbers 1 to n)
