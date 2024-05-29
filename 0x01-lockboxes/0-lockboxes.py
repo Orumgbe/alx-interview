@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Lockboxes Task"""
 
 
 def canUnlockAll(boxes):
