@@ -3,7 +3,10 @@
 
 
 def canUnlockAll(boxes):
-    """Initialize the set of opened boxes and the list of keys we have"""
+    """
+       Initialize the set of opened boxes
+       and the list of keys we have
+    """
     opened_boxes = set([0])
     keys = boxes[0]
 
